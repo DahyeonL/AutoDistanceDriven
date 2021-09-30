@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:padding="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/edittext_login_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="username"
+            android:hint="UserID"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+        <EditText
+            android:id="@+id/edittext_login_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:id="@+id/button_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            app:backgroundTint = "@null"
+            android:background="@drawable/button_regular"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:src="@drawable/logo_car"/>
+    </LinearLayout>
+
+</layout>
